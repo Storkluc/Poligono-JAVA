@@ -1,0 +1,33 @@
+
+package poligono;
+
+    public class TrianguloRetangulo extends Triangulo{
+    private double area;
+    private double perimetro;
+
+    
+    public double calculaArea(){
+        return area=(this.lados[2]*this.lados[1])/2;
+    }
+    public double calculaPerimetro(){
+        return perimetro=this.lados[0]+this.lados[1]+this.lados[2];
+        
+    }
+
+    public double getArea() {
+        return area;
+    }
+
+    public double getPerimetro() {
+        return perimetro;
+    }
+
+    public void mostrarAtributos(){
+        System.out.println("");
+        System.out.println("Triangulo Retangulo:");
+        System.out.println("Area do Triangulo Retangulo = "+getArea());
+        System.out.println("Perimetro do Triangulo Retangulo é = "+getPerimetro());
+        System.out.println("____________________________________");
+    }
+    
+}
